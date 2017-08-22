@@ -13,13 +13,63 @@ var to_be_run_on_server_response = function (weather_data) {
 }
 
 //Front End Logic
-$.get({
-    url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
-    success: function (weather_data) {
-        to_be_run_on_server_response(weather_data);
-    }
-})
-//$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84').success(to_be_run_on_server_response);
-//  var sunriseTime = new Date(weather_data.sys.sunrise * 1000);
-//$('.sunrise').append(sunriseTime);
-//http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={APIKEY}
+$(document).ready(function (event) {
+    
+     $.get({
+            url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            success: function (weather_data) {
+                to_be_run_on_server_response(weather_data);
+            }
+        })
+    
+//action for nairobi link 
+    $('#nairobi').click(function (event) {
+        event.preventDefault();
+ $('.clearField').empty();
+        alert('Please be patient, data is currently being fetched.');
+        $.get({
+            url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            success: function (weather_data) {
+                to_be_run_on_server_response(weather_data);
+            }
+        })
+    })
+//action for london link 
+     $('#london').click(function (event) {
+         event.preventDefault();
+      $('.clearField').empty();
+        alert('Please be patient, data is currently being fetched.');
+        $.get({
+            url: 'http://api.openweathermap.org/data/2.5/weather?q=London&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            success: function (weather_data) {
+                to_be_run_on_server_response(weather_data);
+            }
+        })
+    })
+    //action for paris link 
+     $('#paris').click(function (event) {
+         event.preventDefault();
+         $('.clearField').empty();
+        alert('Please be patient, data is currently being fetched.');
+        $.get({
+            url: 'http://api.openweathermap.org/data/2.5/weather?q=Paris&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            success: function (weather_data) {
+                to_be_run_on_server_response(weather_data);
+            }
+        })
+    })
+    //action for new york link 
+     $('#new-york').click(function (event) {
+         event.preventDefault();
+        $('.clearField').empty();
+        alert('Please be patient, data is currently being fetched.');
+        $.get({
+            url: 'http://api.openweathermap.org/data/2.5/weather?q=New%20York&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            success: function (weather_data) {
+                to_be_run_on_server_response(weather_data);
+            }
+        })
+    })
+    
+    
+});
