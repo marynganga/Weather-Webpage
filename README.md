@@ -19,9 +19,9 @@ The weather information displayed includes:
 ## Setup/Installation Requirements
 
 To view the website, 
-* click [Ping Pong Gaming App](https://marynganga.github.io/PingPong-Gaming-Web-App/)
+* click [Weather Webpage](https://marynganga.github.io/Weather-Webpage/)
 or 
-* copy the link https://marynganga.github.io/PingPong-Gaming-Web-App/ paste it to your browser and load it.  
+* copy the link https://marynganga.github.io/Weather-Webpage/ paste it to your browser and load it.  
 
 
 ## Known Bugs
