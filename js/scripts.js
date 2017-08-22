@@ -16,7 +16,7 @@ var to_be_run_on_server_response = function (weather_data) {
 $(document).ready(function (event) {
     
      $.get({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
             success: function (weather_data) {
                 to_be_run_on_server_response(weather_data);
             }
@@ -28,7 +28,7 @@ $(document).ready(function (event) {
  $('.clearField').empty();
         alert('Please be patient, data is currently being fetched.');
         $.get({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
             success: function (weather_data) {
                 to_be_run_on_server_response(weather_data);
             }
@@ -40,7 +40,7 @@ $(document).ready(function (event) {
       $('.clearField').empty();
         alert('Please be patient, data is currently being fetched.');
         $.get({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=London&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=London&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
             success: function (weather_data) {
                 to_be_run_on_server_response(weather_data);
             }
@@ -52,7 +52,7 @@ $(document).ready(function (event) {
          $('.clearField').empty();
         alert('Please be patient, data is currently being fetched.');
         $.get({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=Paris&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=Paris&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
             success: function (weather_data) {
                 to_be_run_on_server_response(weather_data);
             }
@@ -64,7 +64,7 @@ $(document).ready(function (event) {
         $('.clearField').empty();
         alert('Please be patient, data is currently being fetched.');
         $.get({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=New%20York&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=New%20York&mode=json&units=imperial&APPID=bb06a3a2f8dea8a4a2d84ec5b34fdd84',
             success: function (weather_data) {
                 to_be_run_on_server_response(weather_data);
             }
