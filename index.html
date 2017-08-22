@@ -5,7 +5,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
-  
+
     <title>Weather Webpage</title>
 </head>
 
@@ -13,11 +13,25 @@
     <div class="container">
         <header class="jumbotron">
             <h1>Weather Webpage</h1>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Choose a City</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a id="nairobi" href="#">Nairobi</a></li>
+                        <li><a id="london" href="#">London</a></li>
+                        <li><a id="paris" href="#">Paris</a></li>
+                        <li><a id="new-york" href="#">New York</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <section class="wells">
-        <h3>City: Nairobi</h3>
+
+            <h3>City: Nairobi</h3>
         </section>
-        <section class = "body">
+        <section class="body">
             <p>Current temperature: <span class="temp"> </span></p>
             <p>Today's high temperatures: <span class="maxTemp"> </span></p>
             <p>Today's low temperatures: <span class="minTemp"> </span></p>
@@ -27,9 +41,9 @@
             <!--(hint: new Date(weatherData.sys.sunrise * 1000) ) -->
             <p>Sunset time: <span class="sunset"> </span></p>
         </section>
-    
+
     </div>
- <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
